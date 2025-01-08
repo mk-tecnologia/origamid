@@ -35,7 +35,7 @@
 ## 🛠️ Exercícios
 ### HTML/CSS:
 * **📝 1. Exercício 0214** => [Carros e Bicicletas](https://mk-tecnologia.github.io/origamid/HTML-CSS/carros-e-bicicletas/)
-* **📝 2. Exercício 0506** => [Bikecraft](https://mk-tecnologia.github.io/origamid/HTML-CSS/bikcraft/)
+* **📝 2. Exercício 0506** => [Bikcraft](https://mk-tecnologia.github.io/origamid/HTML-CSS/bikcraft/)
 
 ## 📝 Licença
 
