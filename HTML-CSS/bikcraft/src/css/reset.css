@@ -1,0 +1,154 @@
+/* RESET GERAL */
+/* APLICA BOX-SIZING A TODOS OS ELEMENTOS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* MELHOR SUPORTE A DIFERENTES IDIOMAS E ESCRITA VERTICAL */
+:root {
+    text-size-adjust: 100%;
+    writing-mode: horizontal-tb;
+}
+
+:host, :root {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* SCROLL SUAVE */
+    -webkit-text-size-adjust: 100%; /* MELHORAR LEGIBILIDADE DE TEXTO EM DISPOSITIVOS MÓVEIS */
+    -moz-osx-font-smoothing: grayscale; /* MELHORAR A CONSISTÊNCIA DE FONTES EM DIFERENTES NAVEGADORES */
+}
+
+/* DEFINE ALTURA MÍNIMA PARA O BODY */
+body {
+    min-height: 100vh;
+    line-height: 1.3;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* MELHOR SUPORTE A ELEMENTOS PERSONALIZADOS */
+:where(:not(:defined)) {
+    display: none;
+}
+
+/* PREVENIR PROBLEMAS COM MÍDIA INCORPORADA */
+iframe, video, audio {
+    max-width: 100%;
+    display: block;
+}
+
+/* MELHORAR A ACESSIBILIDADE PARA INTERAÇÕES COM FOCO */
+:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* REMOVE ESTILO PADRÃO DE LISTAS */
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* LINKS COM COMPORTAMENTO NEUTRO */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NORMALIZA IMAGENS */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* REMOVE BORDAS E ESTILOS PADRÕES DE BOTÕES */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+/* DEFINE ESTILOS BÁSICOS PARA TABELAS */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* RESETA CAMPOS DE FORMULÁRIOS */
+input,
+textarea,
+select {
+    margin: 0;
+}
+
+/* REMOVE SUBLINHADOS DE LINKS EM BOTÕES */
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* QUEBRA DE PALAVRAS LONGAS */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    /*hyphens: auto;*/
+}
+
+/* TIPOGRAFIA PADRÃO */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/* MELHORA FORMULÁRIOS */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+/* MELHORA A APARÊNCIA EM IOS */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+/* MODO ESCURO */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+    }
+}
+
+/* REDUZ ANIMAÇÕES SE O USUÁRIO PREFERIR */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
