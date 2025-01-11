@@ -1,0 +1,37 @@
+.produtos-bg {
+    background-color: #ffffff;
+}
+
+.produtos {
+    padding: 3.75rem 0;
+}
+
+.produtos h1 {
+    font-size: 3rem;
+    margin: 0 .625rem 3.75rem .625rem;
+}
+
+.produtos-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.produtos-box h2 {
+    color: #a4a4a4;
+    background-color: #f7f7f7;
+    font-size: 3rem;
+    padding: 3.75rem 1.25rem;
+}
+
+.top-red {
+    border-top: .5rem solid #f9265e;
+}
+
+.top-ciano {
+    border-top: .5rem solid #66d9eb;
+}
+
+.top-roxo {
+    border-top: .5rem solid #ae81ff;
+}

@@ -1,0 +1,24 @@
+@import "reset.css";
+@import "fonts.css";
+@import "header.css";
+@import "intro.css";
+@import "sobre.css";
+@import "produtos.css";
+@import "planos.css";
+@import "qualidade.css";
+@import "newsletter.css";
+@import "footer.css";
+
+* {
+    /*border: 1px solid burlywood;*/
+}
+
+body, input {
+    font-family: "MK-Nunito", Helvetica, Arial, sans-serif;
+    color: #222222;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
