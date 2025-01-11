@@ -49,6 +49,18 @@ body {
     justify-content: center;
     padding: 2rem;
     background-color: #ffffff;
+    position: relative;
+}
+
+.box-intro::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 60px;
+    background-color: #ee2211;
+    position: absolute;
+    top: 30px;
+    left: calc(100% - 30px);
 }
 
 .box-intro h1 {
