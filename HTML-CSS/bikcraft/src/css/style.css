@@ -55,12 +55,12 @@ body {
 .box-intro::before {
     content: "";
     display: block;
-    height: 4px;
-    width: 60px;
+    height: .25rem;
+    width: 3.75rem;
     background-color: #ee2211;
     position: absolute;
-    top: 30px;
-    left: calc(100% - 30px);
+    top: 1.875rem;
+    left: calc(100% - 1.875rem);
 }
 
 .box-intro h1 {
