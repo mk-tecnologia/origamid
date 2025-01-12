@@ -1,0 +1,19 @@
+.header-bg {
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-menu ul li a {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}

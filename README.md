@@ -36,6 +36,7 @@
 ### HTML/CSS:
 * **📝 1. Exercício 0214** => [Carros e Bicicletas](https://mk-tecnologia.github.io/origamid/HTML-CSS/carros-e-bicicletas/)
 * **📝 2. Exercício 0506** => [Bikcraft](https://mk-tecnologia.github.io/origamid/HTML-CSS/bikcraft/)
+* **📝 3. Exercício 0704** => [Portfolio](https://mk-tecnologia.github.io/origamid/HTML-CSS/portfolio/)
 
 ### FLEXBOX:
 * **📝 1. Exercício 0301** => [Flexblog](https://mk-tecnologia.github.io/origamid/FLEXBOX/flexblog/)

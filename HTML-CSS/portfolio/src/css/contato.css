@@ -1,0 +1,24 @@
+.contato-bg {
+    background-color: #000000;
+    padding: 5rem 1.5rem;
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 4.5rem;
+}
+
+.contato p {
+    font-size: 1.5rem;
+    color: #CCCCCC;
+}
+
+.contato-lista li {
+    font-size: 2.25rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
