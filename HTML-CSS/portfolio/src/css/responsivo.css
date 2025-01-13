@@ -1,0 +1,84 @@
+@media (max-width: 1000px) {
+    .experiencia, .formacao {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .experiencia h1, .formacao-subtitulo {
+        max-width: 100%;
+        font-size: 7rem;
+    }
+
+    .experiencia-box, .formacao-box {
+        max-width: 70%;
+    }
+
+    .experiencia-texto, .formacao-texto {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .experiencia h1, .formacao-subtitulo {
+        font-size: 5rem;
+    }
+
+    .experiencia-texto, .formacao-texto {
+        font-size: 1rem;
+    }
+
+    .contato {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .intro h1 {
+        width: 100%;
+    }
+
+    .intro-img {
+        grid-row: 2;
+        max-width: 70%;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .experiencia h1, .formacao-subtitulo {
+        font-size: 3rem;
+    }
+}
