@@ -1,0 +1,36 @@
+.intro-bg {
+    box-shadow: inset 0 -120px var(--c0);
+    /*padding: 80px 0;*/
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: MK-Poppins, Arial, sans-serif;
+    align-items: center;
+    gap: 0 40px;
+}
+
+.intro-box {
+    padding-bottom: 200px;
+    align-self: end;
+}
+
+.intro-box h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.intro-box p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.intro-img {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

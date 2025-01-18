@@ -41,6 +41,9 @@
 ### FLEXBOX:
 * **📝 1. Exercício 0301** => [Flexblog](https://mk-tecnologia.github.io/origamid/FLEXBOX/flexblog/)
 
+### JAVASCRIPT:
+* **📝 1. Exercício 0302** => [Animais Fantásticos](https://mk-tecnologia.github.io/origamid/JAVASCRIPT/animais-fantasticos/)
+
 
 ## 📝 Licença
 

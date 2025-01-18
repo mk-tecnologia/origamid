@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: MK-Poppins, arial, sans-serif;
+}
+
+.header-menu {
+    display: flex;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.header-menu li a {
+    font-size: 18px;
+    position: relative;
+}
+
+.header-menu li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    margin-top: 4px;
+    position: absolute;
+    transition: .3s;
+}
+
+.header-menu li a:hover::after {
+    width: 100%;
+}
