@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "fonts.css";
 
 * {
     /*border: 1px solid red;*/
@@ -89,6 +90,10 @@ body {
     height: 23.125rem;
     overflow-y: scroll;
     grid-column: 2;
+}
+
+.animais-lista li {
+    cursor: pointer;
 }
 
 .animais-lista::-webkit-scrollbar {
@@ -200,7 +205,29 @@ body {
     .rodape {
         margin-bottom: 0;
     }
+
     .animais-desc section {
         margin-bottom: 2rem;
+    }
+}
+
+.js .js-tabdesc section {
+    display: none;
+}
+
+.js .js-tabdesc section.ativo {
+    display: block;
+!important;
+    animation: fade-ativo .5s forwards;
+}
+
+@keyframes fade-ativo {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
