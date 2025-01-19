@@ -61,11 +61,15 @@ initFaqAccordion();
 
 //INICIO => SCROLL SUAVE
 function initScrollSuave() {
+    //SELECIONA OS ELEMENTOS
     const linkInterno = document.querySelectorAll(".js-menu a[href^='#']");
 
     function scrollToSection(event) {
+        //DESATIVA A FUNCAO DEFAULT DO ELEMENTO
         event.preventDefault();
+        //SELECIONA O ATRIBUTO HREF
         const href = event.currentTarget.getAttribute("href");
+        //SELECIONA A SECTION COM O ATRIBUOT HREF
         const section = document.querySelector(href);
         section.scrollIntoView({
             behavior: "smooth",
@@ -79,6 +83,7 @@ function initScrollSuave() {
         // });
     }
 
+    //EXECUTA FUNCAO AO CLICAR
     linkInterno.forEach(link => {
         link.addEventListener("click", scrollToSection)
     })
@@ -86,3 +91,31 @@ function initScrollSuave() {
 
 initScrollSuave();
 //FIM => SCROLL SUAVE
+
+//INICIO => SCROLL ANIMADO
+function initScrollAnimado() {
+    //SELECIONA OS ELEMENTOS
+    const sections = document.querySelectorAll(".js-scroll");
+    if (sections.length) {
+        //PEGAR MEDIDA DA TELA
+        const windowSize = window.innerHeight * 0.6;
+
+        function scrollAnimado() {
+            sections.forEach((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const startScrollAnimado = (sectionTop - windowSize) < 0;
+                if (startScrollAnimado)
+                    section.classList.add("ativo");
+                else
+                    section.classList.remove("ativo");
+            })
+        }
+
+        scrollAnimado()
+        window.addEventListener("scroll", scrollAnimado);
+    }
+}
+
+initScrollAnimado();
+
+//FIM => SCROLL ANIMADO
