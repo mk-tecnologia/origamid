@@ -5,7 +5,6 @@ function initTabNav() {
     const activeClass = "ativo";
     //SELECIONANDO TODOS OS "SECTION" DO ELEMENTO
     const tabdesc = document.querySelectorAll(".js-tabdesc section");
-    // console.log(tabmenu, tabdesc);
 
     //VERIFICA SE OS ELEMENTOS EXISTEM E ADD ATIVO NO PRIMEIRO ITEM
     if ((tabmenu.length) && (tabdesc.length)) {
@@ -34,7 +33,7 @@ initTabNav();
 //FIM => TABMENU
 
 //INICIO => FAQ ACCORDION
-function faqAccordion() {
+function initFaqAccordion() {
     //SELECIONA O ELEMENTO
     const accordionList = document.querySelectorAll(".js-accordion dt");
     const activeClass = "ativo";
@@ -57,5 +56,33 @@ function faqAccordion() {
     }
 }
 
-faqAccordion();
+initFaqAccordion();
 //FIM => FAQ ACCORDION
+
+//INICIO => SCROLL SUAVE
+function initScrollSuave() {
+    const linkInterno = document.querySelectorAll(".js-menu a[href^='#']");
+
+    function scrollToSection(event) {
+        event.preventDefault();
+        const href = event.currentTarget.getAttribute("href");
+        const section = document.querySelector(href);
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+        //FORMA ALTERNATIVA DE SCROLL
+        // const topo = section.offsetTop;
+        // window.scrollTo({
+        //     top: topo,
+        //     behavior: "smooth",
+        // });
+    }
+
+    linkInterno.forEach(link => {
+        link.addEventListener("click", scrollToSection)
+    })
+}
+
+initScrollSuave();
+//FIM => SCROLL SUAVE
